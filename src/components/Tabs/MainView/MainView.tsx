@@ -75,6 +75,7 @@ const MainView = () => {
 			<ImportData />
 			<div className={outlineClass}>
 				<Tab
+					style={{overflow: 'auto'}}
 					panes={panes}
 					defaultActiveIndex={parseInt(
 						localStorage.getItem("lastTab") || "0",
